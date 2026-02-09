@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import numpy as np
 import faiss #facebook ai similarity search
@@ -82,3 +83,4 @@ if upload_file is not None:
             st.session_state.message.append({'role':'assistant','content':response_text})
 else:
     st.write('Please Upload a PDF File')
+
